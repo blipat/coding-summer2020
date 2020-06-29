@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> <!-- singeton, empty, void tag -->
     <meta name="author" content="Bernard Lipat"> <!-- This won't be displayed but is still useful information-->
     <meta name="description" content="This is my webpage"> <!-- Note that there is no closing tag. This tag is called singleton/empty/void-->
     <title>Bernard Lipat's Personal Webpage</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header>This is a header </header>
-    <h1>This is a first-level heading</h1>
+    <h1><span style="color:blue">This is a first-level heading</span></h1> <!-- structural tag-->
     <h2>This is a second-level heading, like a sub-heading</h2>
     <p>This is a paragraph</p>
     <hr /> <!-- This is a horizontal rule -->
-    <p>Here are some lists</p>
-    <ol>
+    <p>Here are some lists and a table</p>
+    <ol> <!-- this is a comment -->
       <li>This the first list item</li>
       <li>This the seccond list item</li>
       <li>This the third list item</li>
+      <li></li>
+      <li></li>
     </ol>
     <ul> <!-- Note that this will begin on a new line. This element is called a block element-->
       <li>This list is </li>
       <li>bulleted</li>
-      <li>and <b>not</b> numbered</li> <!--Note this the bold text does not begin on a new linee but stays on the same line. This element is called an in-line element-->
+      <li>and <b>not</b> numbered</li> <!-- semantic tag, Note this the bold text does not begin on a new linee but stays on the same line. This element is called an in-line element-->
     </ul>
     <nav>
       <dl> <!-- Note that this will begin on a new line. This element is called a block element-->
@@ -30,13 +33,27 @@
         <dt>Yet another item</dt><dd>the <i>navigation</i> bar</dd> 
       </dl>
     </nav>
+    <table>
+      <tr>
+        <td>This is row 1 column 1</td>
+        <td>This is row 1 column 2</td>
+        <td>a cell</td>
+        <td>another cell</td>
+      </tr>
+      <tr>
+        <td>This is row 2 column 1</td>
+        <td>This is row 2 column 2</td>
+        <td>yet another a cell</td>
+        <td>one last cell</td>
+      </tr>
+    </table>
     <hr /> 
     <h2>Images and Links</h2>
     <p>I'm creating a link to
       <a href="https://winchendon.myschoolapp.com/app#login"
-         title="Winchendon Information System">WIS</a>.
+         title="Winchendon Information System" target="_blank">WIS</a>.
     </p>
-    <img src="images/myfirstimage.jpg" alt="This image is on my computer">
+    <img src="images/firstimage.jpg" alt="This image is on my computer" style="float:right">
     <br /><!-- this is a line breaek-->
     <img src="https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png" alt="This image is on a website">
     <footer>This is a footer</footer>

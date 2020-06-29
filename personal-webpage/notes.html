@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> <!-- singeton, empty, void tag -->
+    <meta name="author" content="Bernard Lipat"> <!-- This won't be displayed but is still useful information-->
+    <meta name="description" content="This is my notes webpage"> <!-- Note that there is no closing tag. This tag is called singleton/empty/void-->
+    <title>Bernard Lipat's Notes</title>
+  </head>
+  <body>
+    <header id="notes-header"><span style="color:blue">NOTES</span></header>
+    <nav> <!-- navigation bar-->
+        <ul> <!-- Note that this will begin on a new line. This element is called a block element-->
+            <li><a href="index.html"
+                title="About Me" target="_blank">About Me</a>
+            </li>
+            <li>
+                <a href="#notes-header"
+                title="About Me" target="_blank">Notes</a>
+                <ol>
+                    <a href="#tuesday-notes" title="About Me" target="_blank">Tuesday, June 23, 2020</a>
+                </ol>
+            </li>
+        </ul>
+      </nav> 
+    <h2 class="date-headings">Wednesday, June 24, 2020</h2>
+    <dl> <!-- Note that this will begin on a new line. This element is called a block element-->
+        <dt>HTML</dt><dd>Hyper<b>t</b>ext Markup Language</dd>
+        <dt>tag</dt><dd>uses the < > &lt; &amp; the &gt; symbols</dd>
+        <dt>computing device</dt><dd>a physical artifact that can run a program</dd>
+        <dt>computing system</dt><dd>a <i>group</i> of computing devices and programs working together for a common purpose</dd> 
+    </dl>
+    <h2 id="tuesday-notes" class="date-headings">Tuesday, June 23, 2020</h2>
+    <dl> <!-- Note that this will begin on a new line. This element is called a block element-->
+        <dt>HTML</dt><dd>Hyper<b>t</b>ext Markup Language</dd>
+        <dt>tag</dt><dd>uses the &lt; &amp; the &gt; symbols</dd>
+        <dt>computing device</dt><dd>a physical artifact that can run a program</dd>
+        <dt>computing system</dt><dd>a <i>group</i> of computing devices and programs working together for a common purpose</dd> 
+    </dl>
+  </body>
+</html>

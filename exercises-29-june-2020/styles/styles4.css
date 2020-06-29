@@ -1,0 +1,14 @@
+h2 {
+    font-style: normal;
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+    font-weight: normal;
+}
+
+body {
+    font-weight: bold;
+    font-style: oblique;
+}
